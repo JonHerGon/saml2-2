@@ -1,0 +1,39 @@
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" entityID="urn:dev-j1o0rgreugqmu7ag.us.auth0.com">
+    <IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <KeyDescriptor use="signing">
+            <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+                <X509Data>
+                    <X509Certificate>
+                        MIIDHTCCAgWgAwIBAgIJGnAcf95IjofcMA0GCSqGSIb3DQEBCwUAMCwxKjAoBgNVBAMTIWRldi1qMW8wcmdyZXVncW11N2FnLnVzLmF1dGgwLmNvbTAeFw0yNDA5MDUwMTA4MTJaFw0zODA1MTUwMTA4MTJaMCwxKjAoBgNVBAMTIWRldi1qMW8wcmdyZXVncW11N2FnLnVzLmF1dGgwLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJLCppC5welKi8unXyV9vw8tU5Ai0ehJ3grihxHfnFgvSg7JLK1lMyDStb8nTYig6LinHRDKf1/gs6sEiuoHYOVmOdmmDJPiiAZOtx3aWC0ZxlejpzS77QLZNa35nq+UCDKLm1aUWdAglMV3OEccIf8z18ZsAXodbCntKNNMXPue6orZyoJMIBxpiM6px5lSFnaXf9KWCSyIpTDoqiim4dYlEYS0UOI+hxmfAAYX31P4z1p2jZ6bKJ2mpO+Q06KhBNmFuv9Qw8413VBhiO0d7dE9nsp0gTOXLqQZt1dJf+0V9pDeOgJwBwJ9W05njqZF/v2q3vCC0z2sm91uqNZvIFcCAwEAAaNCMEAwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQU03aawhz4Q0icwW6a0U41vMZ65KAwDgYDVR0PAQH/BAQDAgKEMA0GCSqGSIb3DQEBCwUAA4IBAQCK7pluahYPM0bc/sLKrYqL2taZroF598SxJHGI0hZGMxoSnp8FlDFI5f0abb1suYCpOGWPVKh2RXkwZHDRvf3y3l3mEJ5lfi4ywLiRmk3nInIt4ZYeeuViEG1z8o0shb0eSU9FowguZQNebKGyFxN07bgQ05tgWd0OWhwOF0rLtTbtv4Qd6qUiOPaztwK8zyOEvtCo7DTPtktd94D8GUsyh1Imn608cvudJRs490P4borF5LeLPIZVEnGRSyeji3UUE9L9aOPsQa8fGmjy/tr4uMXwyNpqCbHPpug49J6axHPZCvtuDtd8IORK4pWCjjQay7RemL0MmBJUzb9Eicpz
+                    </X509Certificate>
+                </X509Data>
+            </KeyInfo>
+        </KeyDescriptor>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                             Location="https://dev-j1o0rgreugqmu7ag.us.auth0.com/samlp/gH6Iu0rTo8wGsu5gZLMQAXixYswXJXe2/logout"/>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                             Location="https://dev-j1o0rgreugqmu7ag.us.auth0.com/samlp/gH6Iu0rTo8wGsu5gZLMQAXixYswXJXe2/logout"/>
+        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                             Location="https://dev-j1o0rgreugqmu7ag.us.auth0.com/samlp/gH6Iu0rTo8wGsu5gZLMQAXixYswXJXe2"/>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                             Location="https://dev-j1o0rgreugqmu7ag.us.auth0.com/samlp/gH6Iu0rTo8wGsu5gZLMQAXixYswXJXe2"/>
+        <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion"
+                   Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="E-Mail Address"/>
+        <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion"
+                   Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="Given Name"/>
+        <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion"
+                   Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="Name"/>
+        <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion"
+                   Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="Surname"/>
+        <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion"
+                   Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="Name ID"/>
+    </IDPSSODescriptor>
+</EntityDescriptor>

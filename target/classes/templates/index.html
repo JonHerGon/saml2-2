@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a Mi Aplicación</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            background-color: #e0f7fa;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #333;
+        }
+
+        .hero p {
+            margin: 10px 0 20px;
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenido a Mi Aplicación</h1>
+</header>
+
+<nav>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/api/dashboard">API Dashboard</a>
+    <a href="/logout">Cerrar sesión</a>
+</nav>
+
+<section class="hero">
+    <div class="container">
+        <h1>Explora Nuestra Aplicación</h1>
+        <p>Esta es una plataforma segura y eficiente para gestionar tus recursos.</p>
+        <a href="/dashboard" class="button">Ir al Dashboard</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Mi Aplicación. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
+
