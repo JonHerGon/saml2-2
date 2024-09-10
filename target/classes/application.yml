@@ -10,7 +10,7 @@ spring:
                   certificate-location: classpath:local.crt
             singlelogout:
               binding: POST
-              response-url: "https://dev-j1o0rgreugqmu7ag.us.auth0.com/samlp/gH6Iu0rTo8wGsu5gZLMQAXixYswXJXe2/logout"
+              response-url: "http://localhost:9200/logout"
             assertingparty:
               metadata-uri: "classpath:metadata/metadata-idp.xml"
 

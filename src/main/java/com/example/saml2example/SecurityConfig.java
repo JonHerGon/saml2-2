@@ -16,14 +16,13 @@ public class SecurityConfig {
         http
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers("/api/**").authenticated()  // Protege todas las rutas bajo /api/*
-                        .requestMatchers("/dashboard", "/logged-out").permitAll()  // Permite acceso sin autenticación a estas rutas
+                        .requestMatchers("/index", "/logged-out").permitAll()  // Permite acceso sin autenticación a estas rutas
                         .anyRequest().permitAll()  // Permite acceso sin autenticación a cualquier otra ruta
                 )
                 .saml2Login(saml2 -> saml2
                         .defaultSuccessUrl("/api/dashboard")  // Redirige a /api/dashboard después del login exitoso
                 )
-                .saml2Logout((saml2) -> saml2.logoutUrl("/logged-out")  // Elimina las cookies de sesión // Elimina las cookies de sesión // Redirige al dashboard después de logout
-                );// Configuración para SAML2 Logout
+                .saml2Logout(withDefaults());// Configuración para SAML2 Logout
 
         return http.build();
     }
